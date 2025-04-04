@@ -23,11 +23,28 @@ public class tables {
             st = con.createStatement();
 
             if (!tableExists(st, "userdetails")) {
-                st.executeUpdate("CREATE TABLE userdetails (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(225) not null, gender VARCHAR(50) not null, email VARCHAR(255) not null, contact VARCHAR(20) not null, address VARCHAR(500), state VARCHAR(100), country VARCHAR(100) not null, uniqueregid VARCHAR(100) not null, imageName VARCHAR(100);");
+                st.executeUpdate("CREATE TABLE userdetails "
+                        + "(id INT AUTO_INCREMENT PRIMARY KEY, "
+                        + "name VARCHAR(225) not null, "
+                        + "gender VARCHAR(50) not null, "
+                        + "email VARCHAR(255) not null, "
+                        + "contact VARCHAR(20) not null, "
+                        + "address VARCHAR(500), "
+                        + "state VARCHAR(100), "
+                        + "country VARCHAR(100) not null, "
+                        + "uniqueregid VARCHAR(100) not null, "
+                        + "imageName VARCHAR(100)"
+                        + ");");
             }
 
             if (!tableExists(st, "userattendance")) {
-                st.executeUpdate("CREATE TABLE userattendance (userid INT NOT NULL, date DATE NOT NULL, checkin DATETIME, checkout DATETIME, workduration VARCHAR(100));");
+                st.executeUpdate("CREATE TABLE userattendance "
+                        + "(userid INT NOT NULL, "
+                        + "date DATE NOT NULL, "
+                        + "checkin DATETIME, "
+                        + "checkout DATETIME, "
+                        + "workduration VARCHAR(100)"
+                        + ");");
             }
             JOptionPane.showMessageDialog(null, "Tables Checked/Created Successfully");
         } catch (Exception ex) {

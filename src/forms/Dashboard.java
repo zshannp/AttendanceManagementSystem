@@ -68,6 +68,11 @@ public class Dashboard extends javax.swing.JFrame {
 
         btnViewQrs.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnViewQrs.setText("View Qrs");
+        btnViewQrs.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnViewQrsActionPerformed(evt);
+            }
+        });
 
         btnViewUser.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnViewUser.setText("View User");
@@ -87,12 +92,27 @@ public class Dashboard extends javax.swing.JFrame {
 
         btnMarkAttendance.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnMarkAttendance.setText("Mark Attendance");
+        btnMarkAttendance.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMarkAttendanceActionPerformed(evt);
+            }
+        });
 
         btnViewAttendance.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnViewAttendance.setText("View Attendance");
+        btnViewAttendance.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnViewAttendanceActionPerformed(evt);
+            }
+        });
 
         btnGenerateQr.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnGenerateQr.setText("Generate Qr");
+        btnGenerateQr.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGenerateQrActionPerformed(evt);
+            }
+        });
 
         btnExit.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         btnExit.setText("X");
@@ -213,6 +233,23 @@ public class Dashboard extends javax.swing.JFrame {
     private void btnExitMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnExitMouseEntered
         btnExit.setBackground(Color.red);
     }//GEN-LAST:event_btnExitMouseEntered
+
+    private void btnGenerateQrActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGenerateQrActionPerformed
+        BDUtility.openForm(GenerateQr.class.getSimpleName(), new GenerateQr());
+    }//GEN-LAST:event_btnGenerateQrActionPerformed
+
+    private void btnViewQrsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewQrsActionPerformed
+        
+        BDUtility.openForm(ViewQrs.class.getSimpleName(), new ViewQrs());
+    }//GEN-LAST:event_btnViewQrsActionPerformed
+
+    private void btnMarkAttendanceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMarkAttendanceActionPerformed
+        BDUtility.openForm(MarkAttendance.class.getSimpleName(), new MarkAttendance());
+    }//GEN-LAST:event_btnMarkAttendanceActionPerformed
+
+    private void btnViewAttendanceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewAttendanceActionPerformed
+        BDUtility.openForm(ViewAttendance.class.getSimpleName(), new ViewAttendance());
+    }//GEN-LAST:event_btnViewAttendanceActionPerformed
 
     /**
      * @param args the command line arguments

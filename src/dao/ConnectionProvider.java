@@ -11,10 +11,10 @@ import java.sql.DriverManager;
  */
 public class ConnectionProvider {
 
-    private static final String DB_NAME = "attendanceJframebd";
+    private static final String DB_NAME = "attendance_db";
     private static final String DB_URL = "jdbc:mysql://localhost:3306/";
     private static final String DB_USERNAME = "root";
-    private static final String DB_PASSWORD = "123456";
+    private static final String DB_PASSWORD = "sql@123$#$#";
 
     public static Connection getCon() {
         try {

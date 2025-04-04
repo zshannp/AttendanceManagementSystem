@@ -102,6 +102,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="View Qrs"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnViewQrsActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnViewUser">
       <Properties>
@@ -132,6 +135,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Mark Attendance"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMarkAttendanceActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnViewAttendance">
       <Properties>
@@ -140,6 +146,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="View Attendance"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnViewAttendanceActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnGenerateQr">
       <Properties>
@@ -148,6 +157,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Generate Qr"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGenerateQrActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnExit">
       <Properties>
